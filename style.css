@@ -1,7 +1,8 @@
 body {
-  background-color: rgb(18, 17, 17);
+  background-color: rgb(71, 68, 68);
   margin: 0;
   width: 100vw;
+  box-sizing: border-box;
 }
 #root {
   width: 100%;
@@ -12,7 +13,7 @@ body {
 }
 
 .input-field {
-  width: 39%;
+  width: 50%;
   gap: 5%;
   display: flex;
   margin-bottom: 1rem;
@@ -36,13 +37,21 @@ body {
 }
 
 #testId{
-  border: 2px solid rgb(173, 28, 28);
+  /* border: 2px solid red; */
   border-radius: 8px;
   background-color: white;
   width: 30%;
   text-align: center;
+  height: 500px;
 }
-
+#title-container{
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 80%;
+  height: 14%;
+  background-color: rgb(71, 68, 68);
+  margin: 1rem auto;
+}
 #img-container {
   width: 100%;
 }
@@ -60,4 +69,52 @@ p{
 i{
   cursor: pointer;
   color: white;
+}
+
+h3 {
+  color: red;
+}
+
+
+
+/* @media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+} */
+
+@media screen and (max-width: 700px) {
+  #testId {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #testId {
+    width: 60%;
+    height: auto;
+    border: none;
+  }
+
+  #title-container{
+    height: auto;
+  }
+  .input-field {
+    width: 100%;
+  }
+
+  .displayNo {
+    width: 40%;
+  }
+
+  #select-field {
+    width: 87.2%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: medium;
+  }
 }

@@ -7,6 +7,8 @@ function displayEpisodes(object) {
     const episode = document.createElement("div");
     episode.setAttribute("id", "testId");
     const title = document.createElement("h3");
+    const titleContainer = document.createElement("div")
+    titleContainer.setAttribute("id", "title-container")
     const episodeImg = document.createElement("img");
     const imgContainer = document.createElement("div")
     imgContainer.setAttribute("id", "img-container")
@@ -19,7 +21,8 @@ function displayEpisodes(object) {
     episodeImg.src = x.image.medium;
     summary.innerHTML = x.summary;
     rootElem.appendChild(episode);
-    episode.appendChild(title);
+    episode.appendChild(titleContainer);
+    titleContainer.appendChild(title)
     episode.appendChild(imgContainer)
     imgContainer.appendChild(episodeImg)
     episode.appendChild(summary);
@@ -46,6 +49,11 @@ search.addEventListener("keyup", () => {
     displayEpisodes(newArray);
   });
 });
+
+search.addEventListener("click", () => {
+  rootElem.innerHTML = ""
+  displayEpisodes(allEpisodes)
+})
 
 //......................Select Functionality............................................................................
 const select = document.getElementById("select-field");
