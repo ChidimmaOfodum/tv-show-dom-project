@@ -36,11 +36,19 @@ body {
 }
 
 #testId{
-  border: 2px solid red;
+  border: 2px solid rgb(173, 28, 28);
   border-radius: 8px;
   background-color: white;
   width: 30%;
   text-align: center;
+}
+
+#img-container {
+  width: 100%;
+}
+
+img {
+  width: 100%;
 }
 
 p{

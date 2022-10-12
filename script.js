@@ -4,24 +4,25 @@ const rootElem = document.getElementById("root");
 
 function displayEpisodes(object) {
   object.forEach((x) => {
-    let myDiv = document.createElement("div");
-    myDiv.setAttribute("id", "testId");
-    let title = document.createElement("h3");
-    let myImg = document.createElement("img");
-    let summary = document.createElement("p");
+    const episode = document.createElement("div");
+    episode.setAttribute("id", "testId");
+    const title = document.createElement("h3");
+    const episodeImg = document.createElement("img");
+    const imgContainer = document.createElement("div")
+    imgContainer.setAttribute("id", "img-container")
+    const summary = document.createElement("p");
 
 
     title.textContent = `${x.name} - S${(x.season + "").padStart(2, "0")}E${(
       x.number + ""
     ).padStart(2, "0")}`;
-    myImg.src = x.image.medium;
+    episodeImg.src = x.image.medium;
     summary.innerHTML = x.summary;
-    rootElem.appendChild(myDiv);
-    myDiv.appendChild(title);
-    
-    
-     myDiv.appendChild(myImg);
-    myDiv.appendChild(summary);
+    rootElem.appendChild(episode);
+    episode.appendChild(title);
+    episode.appendChild(imgContainer)
+    imgContainer.appendChild(episodeImg)
+    episode.appendChild(summary);
   });
 }
 
