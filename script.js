@@ -38,26 +38,14 @@ let display = document.getElementById("display");
 
 search.addEventListener("keyup", () => {
   let newArray = [];
-  // allEpisodes.forEach((x) => {
-  //   let summaryLower = x.summary.toLowerCase();
-  //   if (x.name.toLowerCase().includes(search.value.toLowerCase()) || summaryLower.includes(search.value.toLowerCase()))
-  //     newArray.push(x);
-  //   display.innerText = `Displaying: ${newArray.length} / ${allEpisodes.length}`;
-  //   rootElem.innerHTML = "";
-  //   displayEpisodes(newArray);
-  // });
-
-  for (let episode of allEpisodes) {
-    let summaryLower = episode["summary"].toLowerCase();
-    if ((episode["name"]).toLowerCase().includes(search.value.toLowerCase()) || summaryLower.includes(search.value.toLowerCase())) {
-      newArray.push(episode)
-    }
+  allEpisodes.forEach((x) => {
+    let summaryLower = x.summary.toLowerCase();
+    if (x.name.toLowerCase().includes(search.value.toLowerCase()) || summaryLower.includes(search.value.toLowerCase()))
+      newArray.push(x);
     display.innerText = `Displaying: ${newArray.length} / ${allEpisodes.length}`;
     rootElem.innerHTML = "";
-    displayEpisodes(newArray)
-  }
-
-
+    displayEpisodes(newArray);
+  });
 });
 
 search.addEventListener("click", () => {
