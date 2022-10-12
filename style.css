@@ -1,3 +1,55 @@
+body {
+  background-color: rgb(18, 17, 17);
+  margin: 0;
+  width: 100vw;
+}
 #root {
-  color: red;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+}
+
+.input-field {
+  width: 39%;
+  gap: 5%;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+}
+
+
+.displayNo {
+  background-color: white;
+  padding-left: 1rem;
+  width: 34%;
+  border-radius: 3%;
+}
+
+#select-field {
+  margin-left: 1.35rem;
+  margin-bottom: 1rem;
+  height: 50px;
+  width: 28%;
+}
+
+#testId{
+  border: 2px solid red;
+  border-radius: 8px;
+  background-color: white;
+  width: 30%;
+  text-align: center;
+}
+
+p{
+  font-size: small;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Sofia', cursive;
+}
+
+i{
+  cursor: pointer;
+  color: white;
 }

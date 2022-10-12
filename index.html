@@ -6,11 +6,32 @@
     <title>TV Show Project | Chidimma (ChidimmaOfodum)</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Sofia&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6d80728cd.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div id="root">
+    <div class="input-field">
+      <input type="search" 
+             id="search" 
+             placeholder="&#xF002; Search" 
+             style="font-family:Arial, FontAwesome" 
+      <div class="displayNo">
+        <p id = "display">Displaying:</p>
+      </div>
+      
     </div>
+
+    <select name="" id="select-field">
+    </select>
+
+    <i class="fa-solid fa-arrows-rotate" id = "reset"></i>
+
+    <main id="root">
+      <div class="episode"></div>
+    </main>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
