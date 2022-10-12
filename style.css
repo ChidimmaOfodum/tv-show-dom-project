@@ -76,14 +76,6 @@ h3 {
 }
 
 
-
-/* @media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-} */
-
 @media screen and (max-width: 700px) {
   #testId {
     width: 40%;

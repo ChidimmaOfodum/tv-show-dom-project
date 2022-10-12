@@ -39,10 +39,8 @@ let display = document.getElementById("display");
 search.addEventListener("keyup", () => {
   let newArray = [];
   allEpisodes.forEach((x) => {
-    let name = x.name.toLowerCase();
-    let searchValue = search.value.toLowerCase();
-    let summary = x.summary.toLowerCase();
-    if (name.includes(searchValue) || summary.includes(searchValue))
+    let summaryLower = x.summary.toLowerCase();
+    if (x.name.toLowerCase().includes(search.value.toLowerCase()) || summaryLower.includes(search.value.toLowerCase()))
       newArray.push(x);
     display.innerText = `Displaying: ${newArray.length} / ${allEpisodes.length}`;
     rootElem.innerHTML = "";
@@ -83,5 +81,6 @@ select.addEventListener("change", ()=> {
 
 document.getElementById("reset").addEventListener("click", () => {
   rootElem.innerHTML = "";
+  select.selectedIndex = 0;
   displayEpisodes(allEpisodes)
 })
