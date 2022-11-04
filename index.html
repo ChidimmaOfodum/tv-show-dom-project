@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TV Show Project | Chidimma (ChidimmaOfodum)</title>
     <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/a6d80728cd.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Sofia&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Roboto&family=Sofia&display=swap"
       rel="stylesheet"
     />
     <script
@@ -19,24 +23,49 @@
   </head>
 
   <body>
-    
-    <div class="input-field">
-      <input
-        type="search"
-        id="search"
-        placeholder="&#xF002; Search"
-        style="font-family: Arial, FontAwesome"
-      />
-      <div class="displayNo">
-        <p id="display">Displaying: 73 / 73</p>
+    <div class="banner">
+      <nav>
+      <div class="select-container">
+        <select name="" id="show-select">
+          <option value="" selected>Select a show</option>
+        </select>
+        <select name="" id="select-field">
+          <option value="" selected>Select an episode</option>
+        </select>
+        <div class="icon-ctn" id="rotateCtn">
+           <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
+
+        <div class="icon-ctn" id="homeCtn">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        
       </div>
-    </div>
 
-    <div class="select-container">
-      <select name="" id="select-field"></select>
+      <div class="search" id="showSearch">
+        <input
+          type="search"
+          id="search"
+          placeholder="&#xF002; Search"
+          style="font-family: Arial, FontAwesome"
+        />
 
-      <i class="fa-solid fa-arrows-rotate" id="reset"></i>
+        <p class="display"></p>
+      </div>
+      <div class="search" id="episodeSearch">
+        <input
+          type="search"
+          id="search"
+          placeholder="&#xF002; Search"
+          style="font-family: Arial, FontAwesome"
+        />
+
+        <p id="display">Disp</p>
+      </div>
+    </nav>
+
     </div>
+    
 
     <main id="root"></main>
 
@@ -45,7 +74,7 @@
     </footer>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
+    <script src="shows.js"></script>
 
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
