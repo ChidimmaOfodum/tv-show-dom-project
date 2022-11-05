@@ -2,7 +2,8 @@ body {
   /* background-color: rgb(71, 68, 68); */
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.825);
+  /* background-color: rgba(0, 0, 0, 0.825); */
+  background-color: black;
   /* background-color:  rgb(14, 14, 14); */
   width: 100vw;
   box-sizing: border-box;
@@ -34,7 +35,7 @@ nav {
 
 .select-container{
   width: 70%;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   display: flex;
   padding: auto 0;
 }
@@ -170,7 +171,7 @@ input {
   /* background: transparent; */
   color:black;
   
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
    box-shadow: rgba(121, 121, 127, 0.455) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(236, 236, 240, 0.1) 0px 16px 56px;
   /* border: 1px solid rgb(136, 131, 131); */
   padding-left: 1em;
@@ -236,13 +237,12 @@ footer {
 
 
 #wrapper {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.825);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 50px;
-  border: 2px solid green;
 }
 
 
@@ -252,13 +252,15 @@ footer {
 #episode{
   /* border: 2px solid red; */
   border-radius: 8px;
-  background-color: white;
+  background-color: rgba(255, 249, 249, 0.9);
+  color: black;
   width: 30%;
   text-align: center;
   height: 500px;
   height: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding-bottom: 1.5em;
+    box-shadow: 0px 0px 10px rgba(240, 46, 170, 0.9);
 }
 .title-container{
   height: 10%;
@@ -281,7 +283,7 @@ footer {
 
 
 h3 {
-  color: red;
+  color: rgba(240, 46, 170, 0.9);
 }
 
 a{
